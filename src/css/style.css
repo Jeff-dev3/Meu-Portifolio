@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --cor-padrao: #ffccff;
+    --cor-padrao-2: rgb(218, 92, 92);
+    --cor-padrao-3:rgb(3, 78, 97);
+    --cor-padrao-4: rgb(8, 113, 139);
+    --cor-padrao-5:rgb(32, 65, 73);
+    --fonte-padrao: 20px;
+}
+
+body{
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 600px 800px repeat(2, 100vh);
+}
+
+article.pagina-1{
+    grid-row: 1 / 2;
+    background-color:var(--cor-padrao-4);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+article.pagina-1 figure.perfil {
+    margin-top: 100px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-image: url(../img/perfil.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+article.pagina-1 .meu-nome{
+    font-size: 24px;
+    margin: 20px;
+    color: var(--cor-padrao);
+    text-align: center;
+}
+
+.meu-nome h2{
+    color: var(--cor-padrao-2);
+}
+
+article.pagina-2{
+    grid-row: 2 / 3;
+    color: var(--cor-padrao);
+    background-color: var(--cor-padrao-3);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    position: relative;
+}
+
+article.pagina-2 div.container-foto{
+    grid-column: 1 / 2;
+    background-color:var(--cor-padrao-2);
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+
+article.pagina-2 div.container-foto .foto-apresentacao{
+    background-image: url(../img/perfil-3.jpg);
+    background-repeat: no-repeat;
+    background-size:contain; 
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+article.pagina-2 div.container-apresentacao, div.container-apresentacao{
+    grid-column: 2 / 4;
+    position: absolute;
+}
+
+article.pagina-2 div.container-apresentacao div.sobre-mim, div.sobre-mim{
+    text-align: center;
+    color: var(--cor-padrao-2);
+    padding: 15px;
+    font-size: 20px;
+}
+
+article.pagina-2 div.container-apresentacao div.texto-apresentacao, div.texto-apresentacao {
+    font-size: var(--fonte-padrao);
+    color: var(--cor-padrao);
+    text-align: justify;
+    text-indent: var(--fonte-padrao);
+    padding: 15px 30px;
+    width: 100%;
+    height: auto;
+}
+
+article.pagina-2 div.container-apresentacao div.texto-apresentacao a:hover{
+    border-radius: 30px;
+    background-color:var(--cor-padrao-2);
+    transition: .5s;
+    color:var(--cor-padrao-3);
+}
+
+article.pagina-2 div.container-apresentacao div.informacoes-pessoais {
+    height: auto;
+    position: relative;
+}
+
+div.informacoes-pessoais .lado{
+    margin: 0px 20px;
+    padding:35px 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--cor-padrao);
+    background-color:var(--cor-padrao-4);
+    border: solid 5px var(--cor-padrao-2);
+    border-radius: 12px;
+    max-height: 230px;
+    width: 48%;
+    }
+
+    div.informacoes-pessoais .lado.esquerdo{
+    position: absolute;
+    left: 0;
+}
+    
+ div.informacoes-pessoais .lado.direito{
+    position: absolute;
+    right: 0;
+}
+
+
+article.pagina-3{
+    grid-row: 3 / 4;
+    background-color:var(--cor-padrao-5);
+}
+
+article.pagina-3 div.meu-servico{
+    padding: 30px 0px 0px 30px;
+    height: 100px; 
+    color: var(--cor-padrao);
+}
+
+article.pagina-3 div.rodape-container{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1;
+}
+
+article.pagina-3 div.rodape-container div.container-imagem{
+    background-color:var(--cor-padrao-4);
+    grid-row: 1fr;
+    margin: 0px 10px;
+    border-radius: 12px;
+}
+
+.container-imagem .imagem-rodape{
+    color: var(--cor-padrao);
+    margin: 5px 10px 5px 5px;
+    padding: 20px 5px 5px 15px;
+    height: 100px;
+}
+
+.imagem-rodape h3{
+    text-align: center;
+}
+
+.imagem-rodape .fundo-1{
+    background-image: url(../img/logo1-rodape.png);
+    height: 70px;
+}
+
+.imagem-rodape .fundo-2{
+    background-image: url(../img/logo2-rodape.png);
+    height: 70px;
+}
+
+.imagem-rodape .fundo-3{
+    background-image: url(../img/logo3-rodape.png);
+    height: 70px;
+} 
+
+.imagem-rodape h3{
+    padding-top: 20px;
+}
+
+.container-imagem .texto-rodape p{
+    background-color: var(--cor-padrao);
+    color: var(--cor-padrao-5);
+    font-size: var(--fonte-padrao);
+    margin: 10px 20px;
+    padding: 15px;
+    height: 300px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+article.pagina-4{
+    grid-row: 4 / 5;
+    background-color:var(--cor-padrao-4);
+}
+article.pagina-4 div.sobre-mim{
+    margin: 60px 0px;
+    font-size: var(--fonte-padrao);
+}
+
+article.pagina-4 div.texto-apresentação{
+    font-weight: 600;
+}

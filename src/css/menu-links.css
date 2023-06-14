@@ -1,0 +1,82 @@
+
+header{
+    height: 130px;
+    background-color:rgb(3, 78, 97);
+    }
+    
+    .container-inicio{
+    position: relative;
+    height: 110px;
+    }
+    
+    .container-inicio .inicio{
+    position: absolute;
+    top:55px;
+    transform: translateY(-50%);
+    left:0;
+    margin:10px;
+    padding: 25px;
+    border-radius: 50%;
+    color: var(--cor-padrao);
+    background-color:rgb(218, 92, 92);
+    text-align: center;
+    }
+
+    .inicio h1{
+        font-size:35px;
+    }
+   
+    
+    .container-inicio .menu{
+    position: absolute;
+    right:10px;
+    top:40px;
+    transform: translateY(50%);
+    text-transform: uppercase;
+    }
+    
+    .container-inicio .menu li{
+    display: inline-block;
+    padding: 0px 5px;
+    font-size: 24px;
+    }
+    
+    
+    .menu a{
+    text-decoration: none;
+    color: var(--cor-padrao);
+    cursor: pointer;
+    margin: 5px;
+    padding: 15px;
+    }
+    
+    .menu a:hover, .menu a:active{
+     border-radius: 30px;
+    background-color:rgb(218, 92, 92);
+    transition: .5s;
+    color:rgb(3, 78, 97);
+    }
+    
+ a{
+    color: var(--cor-padrao);
+    text-decoration: none;
+}
+
+.btn{
+    margin: 30px;
+    display: inline-block;
+}
+
+.btn-portifólio{
+    background-color: var(--cor-padrao);
+    width: auto;
+    color:rgb(8, 113, 139);
+    padding: 15px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.btn-portifólio a{
+    text-decoration:none;
+    color:rgb(224, 20, 20);
+}
