@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 1440px;
+    max-width: 1920px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
@@ -13,6 +13,7 @@
     --cor-padrao-4: rgb(8, 113, 139);
     --cor-padrao-5:rgb(32, 65, 73);
     --fonte-padrao: 20px;
+    --radius-padrao: 12px;
 }
 
 body{
@@ -63,11 +64,11 @@ article.pagina-2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1;
-    position: relative;
+    position: relative; 
 }
 
 article.pagina-2 div.container-foto{
-    grid-column: 1 / 2;
+    grid-column: 1 / 2; 
     background-color:var(--cor-padrao-2);
     position: absolute;
     left:0;
@@ -114,6 +115,30 @@ article.pagina-2 div.container-apresentacao div.texto-apresentacao a:hover{
     color:var(--cor-padrao-3);
 }
 
+.btn{
+    margin: 30px;
+    display: inline-block;
+}
+
+.btn-portifólio{
+    background-color: var(--cor-padrao);
+    width: auto;
+    padding: 15px;
+    width: fit-content;
+    border-radius: var(--radius-padrao);
+}
+
+.btn-portifólio a{
+    text-decoration:none;
+    font-weight: bold;
+    color:rgb(224, 20, 20);
+}
+
+.btn-portifólio a:hover{
+    color: var(--cor-padrao-5);
+    transition: .3s;
+}
+
 article.pagina-2 div.container-apresentacao div.informacoes-pessoais {
     height: auto;
     position: relative;
@@ -122,13 +147,13 @@ article.pagina-2 div.container-apresentacao div.informacoes-pessoais {
 div.informacoes-pessoais .lado{
     margin: 0px 20px;
     padding:35px 30px;
-    font-size: 20px;
+    font-size: var(--fonte-padrao);
     line-height: 30px;
     color: var(--cor-padrao);
     background-color:var(--cor-padrao-4);
     border: solid 5px var(--cor-padrao-2);
-    border-radius: 12px;
-    max-height: 230px;
+    border-radius: var(--radius-padrao);
+    height: 230px;
     width: 48%;
     }
 
@@ -164,32 +189,42 @@ article.pagina-3 div.rodape-container div.container-imagem{
     background-color:var(--cor-padrao-4);
     grid-row: 1fr;
     margin: 0px 10px;
-    border-radius: 12px;
+    border-radius: var(--radius-padrao);
 }
 
 .container-imagem .imagem-rodape{
-    color: var(--cor-padrao);
+    color: var(--cor-padrao-2);
     margin: 5px 10px 5px 5px;
     padding: 20px 5px 5px 15px;
     height: 100px;
+    font-weight: bold;
 }
 
 .imagem-rodape h3{
     text-align: center;
+    font-size: var(--fonte-padrao);
+}
+
+.imagem-rodape .radius{
+    border-top-left-radius: var(--radius-padrao);
+    border-top-right-radius: var(--radius-padrao);
 }
 
 .imagem-rodape .fundo-1{
     background-image: url(../img/logo1-rodape.png);
+    background-size: cover;
     height: 70px;
 }
 
 .imagem-rodape .fundo-2{
     background-image: url(../img/logo2-rodape.png);
+    background-size: cover;
     height: 70px;
 }
 
 .imagem-rodape .fundo-3{
     background-image: url(../img/logo3-rodape.png);
+    background-size: cover;
     height: 70px;
 } 
 
@@ -206,6 +241,8 @@ article.pagina-3 div.rodape-container div.container-imagem{
     height: 300px;
     text-align: justify;
     text-indent: 20px;
+    border-bottom-left-radius: var(--radius-padrao);
+    border-bottom-right-radius: var(--radius-padrao);
 }
 
 article.pagina-4{

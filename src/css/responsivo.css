@@ -1,2 +1,112 @@
 @media(max-width:768px){
+
+    main{
+    grid-template-rows: 400px 800px 1100px 800px;
+    }
+
+    article.pagina-1 figure.perfil {
+        margin-top: 30px;
+        height: 180px;
+        width: 180px;
+    }
+
+    article.pagina-2{
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    article.pagina-2 div.container-foto{
+        grid-column: 1 / 2; 
+        background-color: none;
+        left:0;
+        width: 0%;
+    }
+    
+    article.pagina-2 div.container-foto .foto-apresentacao{
+        background-image: none;
+    }
+    
+    article.pagina-2 div.container-apresentacao, div.container-apresentacao{
+        grid-column: 2 / 4;
+    }
+
+    .btn{
+        margin-top: 40px;
+    }
+
+    div.informacoes-pessoais .lado{
+        height: 270px;
+        margin-top: 20px;
+        padding-top:30px;
+    }
+
+    article.pagina-3 div.rodape-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article.pagina-3 div.rodape-container div.container-imagem{
+        height: 300px;
+        margin: 5px;
+    }
+
+    .container-imagem .imagem-rodape{
+        color: var(--cor-padrao-2);
+        margin: 5px 10px 0px 5px;
+        padding: 05px 5px 0px 15px;
+        height: 100px;
+        font-weight: bold;
+    }
+
+    article.pagina-3 div.meu-servico{
+        text-align: center; 
+        color: var(--cor-padrao);
+    }
+    .container-imagem .texto-rodape p{
+        height: 180px;
+        text-align: justify;
+        text-indent: 20px;
+        margin-top: 5px;
+        padding-top: 25px;
+    }
+
+    article.pagina-4 div.sobre-mim{
+        margin: 30px 0px;
+    }
+
+    article.pagina-4 div.container-apresentacao div.texto-apresentacao{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 450px) {
+
+    main{
+        grid-template-rows: 350px 750px 1050px 900px;
+        }
+
+    article.pagina-1 figure.perfil {
+        margin-top: 30px;
+        height: 140px;
+        width: 140px;
+    }
+
+    article.pagina-1 .meu-nome{
+        font-size: 19px;
+    }         
+
+    div.informacoes-pessoais .lado{
+        font-size: 16px;
+        margin: 5px 10px;
+        padding: 15px;
+        height: 230px;
+    }
+
+    article.pagina-2 div.container-apresentacao div.texto-apresentacao{
+        font-size: 16px;
+    }
+    .container-imagem .texto-rodape p{
+        font-size: 16px;
+    }
 }
