@@ -83,11 +83,11 @@ header .menu-mobile {
 }
 
 header .hamburguer {
-    background-color: #000;
+    background-color: rgb(218, 92, 92);
     position: relative;
     display: block;
     width: 30px;
-    height: 2px;
+    height: 4px;
     top: 29px;
     left: 15px;
     transition: .5s ease-in-out;
@@ -95,7 +95,7 @@ header .hamburguer {
 
 header .hamburguer:before,
 header .hamburguer:after {
-    background-color: #000;
+    background-color:rgb(218, 92, 92);
     position: absolute;
     content: "";
     display: block;
@@ -161,8 +161,9 @@ header input:checked~label .hamburguer:after {
     }
 
     header nav ul {
-        width: 150px;
         background-color: rgb(3, 78, 97);
+        border-radius: 12px;
+        width: 180px;
         padding: 20px;
     }
 
