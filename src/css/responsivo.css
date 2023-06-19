@@ -63,6 +63,7 @@
         text-align: center; 
         color: var(--cor-padrao);
     }
+    
     .container-imagem .texto-rodape p{
         height: 180px;
         text-align: justify;

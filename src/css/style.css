@@ -194,7 +194,7 @@ article.pagina-3 div.rodape-container div.container-imagem{
 }
 
 .container-imagem .imagem-rodape{
-    color: var(--cor-padrao-2);
+    color: #fff;
     margin: 5px 10px 5px 5px;
     padding: 20px 5px 5px 15px;
     height: 100px;
@@ -204,6 +204,11 @@ article.pagina-3 div.rodape-container div.container-imagem{
 .imagem-rodape h3{
     text-align: center;
     font-size: var(--fonte-padrao);
+}
+
+.imagem-rodape h3 a:hover{
+    color: var(--cor-padrao-2);
+    transition: .4s;
 }
 
 .imagem-rodape .radius{

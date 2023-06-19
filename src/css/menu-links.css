@@ -47,6 +47,7 @@ header .container-inicio .inicio h1 a:hover{
     border-radius: 50px;
     transition: .3s;
     list-style-type: none;
+    text-transform: uppercase;
 }
 
 .container-inicio .menu a {
